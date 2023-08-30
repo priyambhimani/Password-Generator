@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Main Div -->
+    <div class="Container">
+        <!--Heading Password Generator-->
+        <h1>Password Generator</h1>
+       
+        <!-- Shows the password generated -->
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display">
+
+          <!--  <button data-copy>
+                <span data-copyMsg>copy</span>
+                
+            </button> -->
+
+        </div>
+
+        <div class="input-container">
+
+            <!-- Shows length of password -->
+
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>10</p>
+            </div>
+
+            <!-- Slider -->
+
+            <div class="slider-container">
+            <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+            
+            </div>
+
+            <!-- Check Boxes -->
+
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes uppercase letters</label>
+            </div>
+            
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes lowercase letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes numbers</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes symbols</label>
+            </div>
+
+            <!-- Strength Container -->
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div strength-indicator>
+                    <p class="writeStrength"></p>
+                </div>
+            </div>
+
+            <!-- Generate Password Button-->
+
+            <button class="generatePassword">
+                Generate Password
+            </button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f96bd83287.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
